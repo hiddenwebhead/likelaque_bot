@@ -5,7 +5,7 @@
 
 1. Створи `.env` файл і додай туди:
 ```
-BOT_TOKEN=тут_токен_твого_бота
+BOT_TOKEN=8011086140:AAHE8vhwK2F5VlD1WJkBFLGAIYfd2Csu_vs
 ```
 
 2. Встанови залежності:
