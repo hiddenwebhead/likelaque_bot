@@ -12,10 +12,14 @@ dp = Dispatcher()
 
 @dp.message(Command("command1"))
 async def handle_online_booking(message: Message):
-    url = "https://n429737.alteg.io/company/34048/personal/menu?fbclid=PAZXh0bgNhZW0CMTEAAaeQn-WU4BpebipAS1cn_J1-W6lY9ynQnmUJFA5PhXl4Ov5R8Nm_ldYt0Lo_aem_66VcMl-ZJo4SMs9--OYUvwo&o="
+    url = "https://n53924.alteg.io"
     kb = InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(text="📅 Перейти до онлайн-запису", url=url)]
+    url = "https://www.instagram.com/likelaque/"
+    kb = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="📅 Instagram", url=url)]
         ]
     )
     await message.answer("Оберіть нижче:", reply_markup=kb)
