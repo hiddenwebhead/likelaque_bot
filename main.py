@@ -11,13 +11,13 @@ dp = Dispatcher()
 @dp.message(Command("start"))
 async def start_handler(message: Message):
     # При /start отправляем сразу меню услуг
-    menu_text = """📋 [Дізнатися о послугах](https://likelaque.com.ua/pdf/price.pdf)
-🗓 [Записатися на послуги онлайн](https://n53924.alteg.io)
-📍 [Дізнатися як дістатися](https://www.google.com/maps/place/Yevhena+Konovaltsia+St,+3,+Kyiv)
-🕒 [Дізнатися графік роботи](https://t.me/Like_Laque_bot?start=schedule)
-📸 [Подивитисі світлини в Instagram](https://www.instagram.com/likelaque/)
-📞 [Зателефонувати у салон](tel:+380678322330)
-💬 [Написати в салон](https://www.instagram.com/direct/t/117822186276861)"""
+    menu_text = """📋 [Послуги](https://likelaque.com.ua/pdf/price.pdf)
+🗓 [Онлайн-запис](https://n53924.alteg.io)
+📍 [Як дістатися](https://www.google.com/maps/place/Yevhena+Konovaltsia+St,+3,+Kyiv)
+🕒 [Графік ПН-ПТ 09:00-21:00, СБ-НД 10:00-21:00]
+📸 [Instagram](https://www.instagram.com/likelaque/)
+📞 [Дзвінок](tel:+380678322330)
+💬 [Чат](https://www.instagram.com/direct/t/117822186276861)"""
     await message.answer(menu_text, disable_web_page_preview=True)
 
 async def main():
