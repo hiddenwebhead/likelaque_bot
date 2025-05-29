@@ -18,7 +18,7 @@ menu_keyboard = InlineKeyboardMarkup(
          InlineKeyboardButton(text="🕒 ПН-ПТ 09:00-21:00, СБ-НД 10:00-21:00",
         [InlineKeyboardButton(text="📸 Instagram", url="https://www.instagram.com/likelaque/"),
          InlineKeyboardButton(text="📞 80678322330",
-        [InlineKeyboardButton(text="💬 Чат", url="https://www.instagram.com/direct/t/117822186276861")]
+        [InlineKeyboardButton(text="💬 Чат", url="https://www.instagram.com/direct/t/117822186276861")]]
 )
 
 @dp.message(Command("start"))
