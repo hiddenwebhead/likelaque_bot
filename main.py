@@ -29,10 +29,10 @@ async def start_handler(message: Message):
 
 async def reminder_loop():
     while True:
-        await asyncio.sleep(300)
+        await asyncio.sleep(3000000)
         for chat_id in subscribed_users:
             try:
-                await bot.send_message(chat_id, "💅 Нагадування: не забудьте записатися на манікюр!")
+                await bot.send_message(chat_id, "💅 Нагадування: не забудьте записатися на послуги!")
             except Exception:
                 pass
 
