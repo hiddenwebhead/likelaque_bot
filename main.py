@@ -19,7 +19,7 @@ async def handle_online_booking(message: Message):
     url = "https://www.instagram.com/likelaque/"
     kb = InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="📅 Instagram", url=url)]
+            [InlineKeyboardButton(text="📸 Instagram", url=url)]
         ]
     )
     await message.answer("Оберіть нижче:", reply_markup=kb)
