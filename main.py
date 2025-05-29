@@ -19,6 +19,22 @@ async def start_handler(message: Message):
 💬 [Чат](https://www.instagram.com/direct/t/117822186276861)
 📞 [80678322330]"""
     await message.answer(menu_text, disable_web_page_preview=True)
+reminder_text = "💅 Не забудьте записатися на послуги!"
+
+@dp.message(Command("start"))
+async def start_handler(message: Message):
+    subscribed_users.add(message.chat.id)
+    await message.answer(menu_text, disable_web_page_preview=True)
+
+# Автонагоди кожні 5 хв
+async def reminder_loop():
+    while True:
+        await asyncio.sleep(300)
+        for chat_id in subscribed_users:
+            try:
+                await bot.send_message(chat_id, reminder_text)
+            except Exception:
+                pass
 
 async def main():
     await dp.start_polling(bot)
